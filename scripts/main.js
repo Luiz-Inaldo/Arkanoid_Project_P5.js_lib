@@ -14,22 +14,22 @@ function setup() {
 function draw() {
   // tela de menu
   if (tela === 'main menu'){
-    textMainMenu();
+    textoMenuPrincipal();
   }
   
   // jogo funcionando
   if (tela === 'game'){
-    game();
+    jogo();
   }
   
   // sobre o jogo
   if (tela === 'about'){
-    textAbout();
+    textoSobre();
   }
   
   // menu de pausa
   if (tela === 'pause menu'){
-    textPauseMenu();
+    textoMenuPausa();
   }
   
   // game over

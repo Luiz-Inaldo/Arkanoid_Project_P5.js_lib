@@ -83,3 +83,12 @@ function changeDificult(){
     }
   }
 }
+
+function gameOverAndPauseMenu() {
+  if (vidasRestantes === 0){
+    tela = 'game over';
+  } else if (keyIsDown(13)){
+    somClick.play();
+    tela = 'pause menu';
+  }
+}

@@ -19,3 +19,8 @@ function movimentaJogador() {
     }  
   } 
 }
+
+function jogadorFeatures(){
+  jogadorNaTela();
+  movimentaJogador();
+}

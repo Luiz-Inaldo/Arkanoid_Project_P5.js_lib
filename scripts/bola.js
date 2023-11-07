@@ -9,6 +9,15 @@ let isBolaMovimento = false;
 let colisaoBloco = false;
 let colisaoJogador = false;
 
+function bolaFeatures(){
+  mostrarBola();
+  confirmaMovimento();
+  verificaColisaoParede();
+  verificaColisaoBase();
+  verificaColisaoBloco();
+  verificaColisaoJogador(xJogador, yJogador);
+}
+
 function mostrarBola() {
   fill(128, 128, 128);
   image(imagemBola, xBola, yBola, 20, 20);
@@ -85,12 +94,12 @@ function verificaColisaoJogador(x, y) {
   }
 }
 
-function movimentaBolaConjunto() {
-  if (isBolaMovimento === false && isJogadorMovimento === false){
-    if (keyIsDown(LEFT_ARROW) && xJogador > 0) {
-      xBola -= velocidadeXBola;
-    } else if (keyIsDown(RIGHT_ARROW) && xJogador + larguraJogador < 550) {
-      xBola += velocidadeXBola;
-    }
-  } 
-}
+// function movimentaBolaConjunto() {
+//   if (isBolaMovimento === false && isJogadorMovimento === false){
+//     if (keyIsDown(LEFT_ARROW) && xJogador > 0) {
+//       xBola -= velocidadeXBola;
+//     } else if (keyIsDown(RIGHT_ARROW) && xJogador + larguraJogador < 550) {
+//       xBola += velocidadeXBola;
+//     }
+//   } 
+// }
