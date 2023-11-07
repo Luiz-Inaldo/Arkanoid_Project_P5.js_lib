@@ -21,6 +21,11 @@ function draw() {
   if (tela === 'game'){
     jogo();
   }
+
+  // transições de tela
+  if (tela === 'transition'){
+    textTransition();
+  }
   
   // sobre o jogo
   if (tela === 'about'){

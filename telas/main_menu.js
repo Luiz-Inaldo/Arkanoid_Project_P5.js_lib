@@ -18,7 +18,7 @@ function textoMenuPrincipal() {
       rect(xMenu, yMenu1, larguraMenu, alturaMenu, 15);
       if (mouseIsPressed){
         somClick.play();
-        tela = 'game';
+        tela = 'transition';
       }
     }  
     

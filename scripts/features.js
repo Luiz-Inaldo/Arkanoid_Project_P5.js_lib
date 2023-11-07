@@ -59,6 +59,7 @@ function changeDificult(){
     for (let i = 0; i < blocos.length; i++){
       blocos[i].existe = true;
     }
+    tela = 'transition';
   } else if (dificuldade === "Medium" && blocosRestantes === 0){
     somWin.play();
     dificuldade = "Hard";
@@ -72,6 +73,7 @@ function changeDificult(){
     for (let i = 0; i < blocos.length; i++){
       blocos[i].existe = true;
     }
+    tela = 'transition';
   } else if (dificuldade === "Hard" && blocosRestantes === 0){
     somWin.play();
     voltaPosInicial();
@@ -81,6 +83,7 @@ function changeDificult(){
     for (let i = 0; i < blocos.length; i++){
       blocos[i].existe = true;
     }
+    tela = 'transition';
   }
 }
 
